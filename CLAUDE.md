@@ -19,7 +19,9 @@ Use core python modules as much as possible, like for sqlite. Assume I am using 
 
 ## Common Commands
 ```bash
-pytest tests/ -v               # run tests
+pixi run -e dev pytest tests/ -v   # run tests
+pixi run -e dev black .            # format
+pixi run -e dev flake8             # lint
 ```
 
 ## Notes
